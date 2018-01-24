@@ -22,7 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
-
+    
   </head>
 
   <body id="page-top">
@@ -164,12 +164,11 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   This is some contnet 
-                  <!-- <i class="fa fa-plus fa-3x"></i> -->
                 </div>
-              </div>
+              </div> -->
               <img class="img-fluid " src="img/portfolio/01-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
@@ -179,11 +178,11 @@
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
+              </div> -->
               <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
@@ -193,11 +192,11 @@
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
+              </div> -->
               <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
@@ -784,7 +783,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
+<script type="text/javascript">
+      $(".portfolio-link").hover(function inHoVer(argument) {
+        //alert('Hi ')
+      });
+    </script>
   </body>
 
 </html>
