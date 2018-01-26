@@ -180,6 +180,11 @@ header.masthead {
 
 #portfolio .portfolio-item {
   right: 0;
+   
+
+}
+#portfolio .portfolio-item {
+  right: 0;
   margin: 0 0 15px; }
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
@@ -229,7 +234,6 @@ header.masthead {
 
 #portfolio * {
   z-index: 2; }
-
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
