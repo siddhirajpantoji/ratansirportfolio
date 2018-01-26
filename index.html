@@ -162,6 +162,7 @@
           </div>
         </div>
         <div class="row">
+          
           <div class="col-md-4 col-sm-6 portfolio-item">
             <div></div>
             <a class="flip-container" data-toggle="modal" href="#portfolioModal1">
@@ -180,6 +181,26 @@
               <p class="text-muted">Hurry !!! Under construction offer can be availed </p>
             </div>
           </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div></div>
+            <a class="flip-container" data-toggle="modal" href="#portfolioModal1">
+               <div id="project2" class="flipper">
+                  <div id="project2Front" class="front">
+                     <img class="img-fluid " src="img/portfolio/02-thumbnail.jpg" alt=""> 
+                  </div>
+                  <div id="project2Back" class="back">
+                    <p class="card-text"> This is Some text that is to be sold Project 2  </p>
+                  </div>
+                </div>
+               <!-- <img class="img-fluid " src="img/portfolio/01-thumbnail.jpg" alt="">  -->
+            </a>
+            <div class="portfolio-caption">
+              <h4>Project 2</h4>
+              <p class="text-muted">Hurry !!! Under construction offer can be availed </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -722,6 +743,11 @@
       $("#project1Back").height($("#project1Front").height());
       $("#project1Back").width($("#project1Front").width());
       $("#project1").height($("#project1Front").height());
+
+       $("#project2Back").offset($("#project2Front").offset());
+      $("#project2Back").height($("#project2Front").height());
+      $("#project2Back").width($("#project2Front").width());
+      $("#project2").height($("#project2Front").height());
     </script>
   </body>
 
