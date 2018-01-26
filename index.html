@@ -165,8 +165,7 @@
           <div class="col-md-4 col-sm-6 portfolio-item">
             <div></div>
             <a class="flip-container" data-toggle="modal" href="#portfolioModal1">
-              
-               <div class="flipper">
+               <div id="project1" class="flipper">
                   <div id="project1Front" class="front">
                      <img class="img-fluid " src="img/portfolio/01-thumbnail.jpg" alt=""> 
                   </div>
@@ -722,6 +721,7 @@
       $("#project1Back").offset($("#project1Front").offset());
       $("#project1Back").height($("#project1Front").height());
       $("#project1Back").width($("#project1Front").width());
+      $("#project1").height($("#project1Front").height());
     </script>
   </body>
 
