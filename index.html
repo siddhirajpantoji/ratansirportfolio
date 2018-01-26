@@ -167,11 +167,11 @@
             <a class="flip-container" data-toggle="modal" href="#portfolioModal1">
               
                <div class="flipper">
-                  <div class="front">
+                  <div id="project1Front" class="front">
                      <img class="img-fluid " src="img/portfolio/01-thumbnail.jpg" alt=""> 
                   </div>
-                  <div class="back">
-                    Back
+                  <div id="project1Back" class="back">
+                    <p class="card-text"> This is Some text that is to be sold </p>
                   </div>
                 </div>
                <!-- <img class="img-fluid " src="img/portfolio/01-thumbnail.jpg" alt="">  -->
@@ -181,76 +181,6 @@
               <p class="text-muted">Hurry !!! Under construction offer can be availed </p>
             </div>
           </div>
-          <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="flip-container" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="flip-container" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="flip-container" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="flip-container" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="flip-container" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -788,10 +718,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-<script type="text/javascript">
-      $(".flip-container").hover(function inHoVer(argument) {
-        //alert('Hi ')
-      });
+    <script type="text/javascript">
+      $("#project1Back").offset($("#project1Front").offset());
+      $("#project1Back").height($("#project1Front").height());
+      $("#project1Back").width($("#project1Front").width());
     </script>
   </body>
 
