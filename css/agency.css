@@ -563,8 +563,8 @@ ul.social-buttons {
 
 .googleMapsArea
 {
-  min-width: 400px;
+  min-width: 200px;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   height: 100%;
 }
