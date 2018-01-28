@@ -595,8 +595,10 @@
 
                    <!-- Half part google map with drop location / Half part list of features  -->
                    <div class="row">
-                   <div class="col-xs-6 col-sm-6" style="background-color: red">
-                     <p>This area for Google Maps </p>
+                   <div class="col-xs-6 col-sm-6">
+                     <div id="project1MapArea" class="googleMapsArea">
+                       
+                     </div>
                    </div>
                    <div class="col-xs-6 col-sm-6" style="background-color: yellow">
                      <p>This area is for listed features </p>
@@ -617,6 +619,17 @@
 
    
     <!-- Bootstrap core JavaScript -->
+    <script>
+      function myMap() {
+      var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.12),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+      var map = new google.maps.Map(document.getElementById("project1MapArea"), mapOptions);
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVq8sykQ20yaIIwm9zQJMFisDDeT2NSvA&callback=myMap"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -629,7 +642,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-    <script type="text/javascript">
+    <script src="js/map_loader.js"></script>
+    
+     <script type="text/javascript">
+      
       $("#project1Back").offset($("#project1Front").offset());
       $("#project1Back").height($("#project1Front").height());
       $("#project1Back").width($("#project1Front").width());
@@ -639,6 +655,7 @@
       $("#project2Back").height($("#project2Front").height());
       $("#project2Back").width($("#project2Front").width());
       $("#project2").height($("#project2Front").height());
+    
     </script>
   </body>
 

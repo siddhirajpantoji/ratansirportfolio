@@ -560,3 +560,11 @@ ul.social-buttons {
 
   position: relative;
 }
+
+.googleMapsArea
+{
+  min-width: 400px;
+  width: 100%;
+  min-height: 400px;
+  height: 100%;
+}
